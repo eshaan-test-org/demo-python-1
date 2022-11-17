@@ -120,6 +120,7 @@ def chained_comparison():
     a = 1
     b = 2
     c = 3
+    d = 1
     return a < b and b < c
 
 

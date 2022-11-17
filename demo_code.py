@@ -32,7 +32,10 @@ class RandomNumberGenerator:
         return self.limits
 
     def get_number(self, min_max=None):
-        """Get a random number between min and max."""
+        """
+        Get a random number between min and max.
+        dasddas
+        """
         if min_max is None:
             min_max = [1, 10]
         if not all(isinstance(i, int) for i in min_max):

@@ -1,3 +1,4 @@
+from demo_code import RandomNumberGenerator
 from duplicate_bases_class import Base
 
 

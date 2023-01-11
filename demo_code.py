@@ -24,6 +24,9 @@ class BaseNumberGenerator:
     def cmethod(cls, something):
         """class method-to-be"""
 
+    @classmethod
+    def dmethod(cls, something):
+        """class method-to-be"""
 
 class RandomNumberGenerator:
     """Generate random numbers."""

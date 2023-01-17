@@ -29,6 +29,7 @@ class BaseNumberGenerator:
         """class method-to-be"""
 
 
+
 class RandomNumberGenerator:
     """Generate random numbers."""
 

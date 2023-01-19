@@ -28,7 +28,6 @@ class BaseNumberGenerator:
     def dmethod(cls, something):
         """class method-to-be"""
 
-
 class RandomNumberGenerator:
     """Generate random numbers."""
 

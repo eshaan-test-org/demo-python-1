@@ -2,6 +2,9 @@ name: CI
 
 on:
   pull_request:
+  push:
+      branches:
+      - master
 
 jobs:
   run-tests:
@@ -33,7 +36,7 @@ jobs:
         coverage xml -o coverage2.xml
         coverage erase
 
-    - name: Report test coverage to DeepSource dev (python, go)
+    - name: Report test coverage to DeepSource dev (python)
       run: |
         curl https://deepsource.io/cli | sh
         export DEEPSOURCE_DSN=$DEEPSOURCE_DSN_DEV
@@ -43,10 +46,17 @@ jobs:
         ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage2.xml
         # existing python artifact with same file so update only
         ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage.xml
+        
+    - name: Report test coverage to DeepSource dev (go)
+      if: github.event_name != 'pull_request'
+      run: |
+        curl https://deepsource.io/cli | sh
+        export DEEPSOURCE_DSN=$DEEPSOURCE_DSN_DEV
         # create go artifact
         ./bin/deepsource report --analyzer test-coverage --key go --value-file ./go_coverage.out
         
-    - name: Report test coverage to DeepSource enterprise-dev (python, go)
+        
+    - name: Report test coverage to DeepSource enterprise-dev (python)
       run: |
         curl https://deepsource.io/cli | sh
         export DEEPSOURCE_DSN=$DEEPSOURCE_DSN_ENTERPRISE_DEV
@@ -56,6 +66,13 @@ jobs:
         ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage2.xml
         # existing python artifact with same file so update only
         ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage.xml
+    
+    - name: Report test coverage to DeepSource enterprise-dev (go)
+      if: github.event_name != 'pull_request'
+      run: |
+        curl https://deepsource.io/cli | sh
+        export DEEPSOURCE_DSN=$DEEPSOURCE_DSN_ENTERPRISE_DEV
         # create go artifact
         ./bin/deepsource report --analyzer test-coverage --key go --value-file ./go_coverage.out
+        
     

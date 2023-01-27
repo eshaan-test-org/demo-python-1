@@ -13,6 +13,7 @@ class Orange:
 
 
 def render():
+    x = 1
     fruit = Orange()
     render_to_frontend(
         fruit.orange

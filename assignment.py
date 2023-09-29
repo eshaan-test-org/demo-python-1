@@ -4,4 +4,6 @@ a, b = [1, 2]  # documenting code no fun
 c = 1
 
 def not_covered():
+  """
+  """
   pass

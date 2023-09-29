@@ -7,4 +7,4 @@ def not_covered():
 	"""
  	empty
  	"""
-	raise NotImplementedError()
+	pass

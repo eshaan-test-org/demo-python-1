@@ -3,11 +3,11 @@
 a, b = [1, 2]  # documenting code no fun
 c = 1
 
-def foo():
+def not_covered():
 	"""
  	empty
  	"""
-	raise NotImplementedError()
+	pass
 
 def bar():
 	"""

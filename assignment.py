@@ -12,7 +12,7 @@ def bar():
 	"""
  	empty
         """
-	raise NotImplementedError()
+	pass
 
 
 def bar2():

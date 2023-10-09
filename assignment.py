@@ -7,9 +7,16 @@ def not_covered():
 	"""
  	empty
  	"""
-	raise NotImplementedError()
+	pass
 
 def bar():
+	"""
+ 	empty
+        """
+	raise NotImplementedError()
+
+
+def bar2():
 	"""
  	empty
         """

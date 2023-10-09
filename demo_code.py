@@ -131,7 +131,7 @@ def wrong_callable():
 
 if __name__ == "__main__":
     args = ["--disable", "all"]
-    for arg in arg:
+    for arg in args:
         has_truthy = bool(arg)
         if has_truthy:
             break

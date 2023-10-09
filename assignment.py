@@ -8,9 +8,3 @@ def not_covered():
  	empty
  	"""
 	pass
-
-def bar():
-	"""
- 	empty
-        """
-	pass

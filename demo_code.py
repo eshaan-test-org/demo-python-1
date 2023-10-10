@@ -123,12 +123,6 @@ def chained_comparison():
     return a < b and b < c
 
 
-def wrong_callable():
-    number = ImaginaryNumber()
-    if callable(number):
-        return number()
-
-
 if __name__ == "__main__":
     args = ["--disable", "all"]
     for arg in args:

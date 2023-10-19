@@ -20,4 +20,10 @@ def bar2():
 	"""
  	empty
         """
+	raise NotImplementedError()
+
+def bar3():
+	"""
+ 	empty
+        """
 	pass

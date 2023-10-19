@@ -14,3 +14,10 @@ def bar():
  	empty
         """
 	pass
+
+
+def bar2():
+	"""
+ 	empty
+        """
+	pass

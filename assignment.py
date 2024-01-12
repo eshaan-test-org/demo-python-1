@@ -7,6 +7,12 @@ def foo():
   """
   pass
 
+def wrong_callable():
+    number = ImaginaryNumber()
+    if callable(number):
+        return number()
+
+
 def bar():
   items = []
   for i in range(2):

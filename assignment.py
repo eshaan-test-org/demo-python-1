@@ -12,12 +12,13 @@ def not_covered():
 def bar():
 	"""
  	empty
-        """
+  """
 	pass
 
 
 def bar2():
 	"""
  	empty
-        """
+  """
 	pass
+

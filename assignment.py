@@ -9,15 +9,16 @@ def not_covered():
  	"""
 	raise NotImplementedError()
 
-def bar():
+def bar1():
 	"""
  	empty
-        """
+  """
 	pass
 
 
 def bar2():
 	"""
  	empty
-        """
+  """
 	pass
+

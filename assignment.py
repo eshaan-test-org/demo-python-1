@@ -22,3 +22,9 @@ def bar2():
 	"""
 	pass
 
+
+def bar3(x, y):
+	"""
+	empty
+	"""
+	return x + y

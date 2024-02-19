@@ -28,3 +28,4 @@ def bar3(x, y):
 	empty
 	"""
 	return x + y
+
